@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* We are defaulting the background to our luxury black for a seamless dark theme */
+  --background: #0D0D0D;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -10,11 +11,18 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* --- Eurosoft Innovation Custom Colors --- */
+  --color-luxury-black: #0D0D0D;
+  --color-luxury-charcoal: #1A1A1A;
+  --color-luxury-gold: #D4AF37;
+  --color-luxury-goldHover: #AA8C2C;
+  --color-luxury-muted: #A3A3A3;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0D0D0D;
     --foreground: #ededed;
   }
 }
